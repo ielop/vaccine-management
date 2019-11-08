@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'controle-de-vacinas'`, () => {
+  it(`should have as title 'vaccine-management'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('controle-de-vacinas');
+    expect(app.title).toEqual('vaccine-management');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('controle-de-vacinas app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('vaccine-management app is running!');
   });
 });
